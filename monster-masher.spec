@@ -13,7 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.0.1
 BuildRequires:	libglademm-devel >= 1.3.0
-BuildRequires:	libgnomeuimm-devel >= 1.3.11
+BuildRequires:	libgnomeuimm-devel >= 2.0.0
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

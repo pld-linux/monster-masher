@@ -2,7 +2,7 @@ Summary:	An action game for the GNOME desktop environment
 Summary(pl):	Gra akcji dla GNOME
 Name:		monster-masher
 Version:	1.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.cs.auc.dk/~olau/%{name}/source/%{name}-%{version}.tar.gz

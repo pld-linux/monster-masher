@@ -1,5 +1,5 @@
-Summary:	An action game for the Gnome desktop environment
-Summary(pl):	Gra akcji dla Gnome
+Summary:	An action game for the GNOME desktop environment
+Summary(pl):	Gra akcji dla GNOME
 Name:		monster-masher
 Version:	1.1
 Release:	1
@@ -18,12 +18,12 @@ Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Monster Masher is an action game for the Gnome desktop environment.
+Monster Masher is an action game for the GNOME desktop environment.
 The basic idea is that you have to clean the caves of monsters. You
 do the cleaning by mashing the monsters with stone blocks.
 
 %description -l pl
-Monster Masher jest gr± akcji dla Gnome. Podstawowym celem gry jest
+Monster Masher jest gr± akcji dla GNOME. Podstawowym celem gry jest
 wyczyszczenie jaskiñ z potworów. Cel ten osi±ga siê t³uk±c potwory
 kamieniami.
 

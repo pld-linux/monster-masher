@@ -9,17 +9,17 @@ Source0:	http://www.cs.auc.dk/~olau/%{name}/source/%{name}-%{version}.tar.gz
 # Source0-md5:	baaa49448e98384c59183ed97cab0f35
 Patch0:		%{name}-desktopdir.patch
 URL:		http://www.cs.auc.dk/~olau/monster-masher/
-Buildrequires:	autoconf
+BuildRequires:	autoconf
 BuildRequires:	automake
-Buildrequires:	gconfmm-devel >= 2.0.1
-Buildrequires:	libglademm-devel >= 1.3.0
+BuildRequires:	gconfmm-devel >= 2.0.1
+BuildRequires:	libglademm-devel >= 1.3.0
 BuildRequires:	libgnomeuimm-devel >= 1.3.11
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Monster Masher is an action game for the Gnome desktop environment.
-The basic idea is that you, has to clean the caves for monsters. You
+The basic idea is that you have to clean the caves of monsters. You
 do the cleaning by mashing the monsters with stone blocks.
 
 %description -l pl
@@ -59,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_sysconfdir}/gconf/schemas/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*

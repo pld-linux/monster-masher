@@ -1,19 +1,19 @@
 Summary:	An action game for the GNOME desktop environment
 Summary(pl):	Gra akcji dla GNOME
 Name:		monster-masher
-Version:	1.3
-Release:	2
+Version:	1.7
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://www.cs.auc.dk/~olau/%{name}/source/%{name}-%{version}.tar.gz
-# Source0-md5:	1ca3b94dbb1b4cf68c20cc89a3aa330d
-Patch0:		%{name}-desktopdir.patch
+Source0:	http://www.cs.auc.dk/~olau/%{name}/source/%{name}-%{version}.tar.bz2
+# Source0-md5:	2fd7df60c87041ff8fcf03944ae01ed0
+Patch0:		%{name}-locale-names.patch
 URL:		http://www.cs.auc.dk/~olau/monster-masher/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gconfmm-devel >= 2.0.1
-BuildRequires:	libglademm-devel >= 1.3.0
-BuildRequires:	libgnomeuimm-devel >= 2.0.0
+BuildRequires:	gconfmm-devel >= 2.6.0
+BuildRequires:	libglademm-devel >= 2.4.0
+BuildRequires:	libgnomeuimm-devel >= 2.6.0
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,6 +30,8 @@ kamieniami.
 %prep
 %setup -q
 %patch0 -p1
+
+mv po/{no,nb}.po
 
 %build
 rm -f missing

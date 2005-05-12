@@ -5,7 +5,7 @@ Version:	1.7
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://www.cs.auc.dk/~olau/%{name}/source/%{name}-%{version}.tar.bz2
+Source0:	http://www.cs.auc.dk/~olau/monster-masher/source/%{name}-%{version}.tar.bz2
 # Source0-md5:	2fd7df60c87041ff8fcf03944ae01ed0
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.cs.auc.dk/~olau/monster-masher/

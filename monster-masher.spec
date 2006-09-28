@@ -1,19 +1,18 @@
 Summary:	An action game for the GNOME desktop environment
 Summary(pl):	Gra akcji dla GNOME
 Name:		monster-masher
-Version:	1.7
+Version:	1.8
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.cs.auc.dk/~olau/monster-masher/source/%{name}-%{version}.tar.bz2
-# Source0-md5:	2fd7df60c87041ff8fcf03944ae01ed0
+# Source0-md5:	c51913f62c23d6502b30bf7c6e0cffc5
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.cs.auc.dk/~olau/monster-masher/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.6.0
 BuildRequires:	libglademm-devel >= 2.4.0
-BuildRequires:	libgnomeuimm-devel >= 2.6.0
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +36,7 @@ mv po/{no,nb}.po
 rm -f missing
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -60,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_datadir}/locale/*
 %{_sysconfdir}/gconf/schemas/*
 %{_desktopdir}/*.desktop
 %{_pixmapsdir}/*

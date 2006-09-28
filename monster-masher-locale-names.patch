@@ -1,12 +1,11 @@
-diff -urN aa/monster-masher-1.7/configure.ac monster-masher-1.7/configure.ac
---- aa/monster-masher-1.7/configure.ac	2004-07-02 22:49:19.000000000 +0200
-+++ monster-masher-1.7/configure.ac	2004-07-08 00:26:28.175434008 +0200
+--- monster-masher-1.8/configure.ac~	2005-10-09 14:30:52.000000000 +0200
++++ monster-masher-1.8/configure.ac	2006-09-28 15:51:32.000000000 +0200
 @@ -34,7 +34,7 @@
  
  
  dnl i18n
--ALL_LINGUAS="az cs cy da de el en_CA en_GB es eu ga hr it lt nl no pl pt pt_BR sr sr@Latn sv tr zh_TW"
-+ALL_LINGUAS="az cs cy da de el en_CA en_GB es eu ga hr it lt nb nl pl pt pt_BR sr sr@Latn sv tr zh_TW"
+-ALL_LINGUAS="az bg ca cs cy da de el en_CA en_GB es eu fi fr ga gu hr it ka lt ne nl no pa pl pt pt_BR rw sq sr sr@Latn sv ta tr uk zh_CN zh_TW"
++ALL_LINGUAS="az bg ca cs cy da de el en_CA en_GB es eu fi fr ga gu hr it ka lt nb ne nl pa pl pt pt_BR rw sq sr sr@Latn sv ta tr uk zh_CN zh_TW"
  	
  GETTEXT_PACKAGE=$PACKAGE
  AC_SUBST(GETTEXT_PACKAGE)

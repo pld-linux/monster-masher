@@ -60,7 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_datadir}/locale/*
 %{_sysconfdir}/gconf/schemas/*
 %{_desktopdir}/*.desktop
 %{_pixmapsdir}/*

@@ -33,7 +33,6 @@ kamieniami.
 mv po/{no,nb}.po
 
 %build
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}

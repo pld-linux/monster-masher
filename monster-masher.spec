@@ -13,6 +13,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.6.0
 BuildRequires:	libglademm-devel >= 2.4.0
+BuildRequires:	libgnome-devel >= 2.0.0
+BuildRequires:	libgnomecanvasmm-devel >= 2.6.0
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

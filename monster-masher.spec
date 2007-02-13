@@ -1,5 +1,5 @@
 Summary:	An action game for the GNOME desktop environment
-Summary(pl.UTF-8):   Gra akcji dla GNOME
+Summary(pl.UTF-8):	Gra akcji dla GNOME
 Name:		monster-masher
 Version:	1.8
 Release:	1

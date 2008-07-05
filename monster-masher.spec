@@ -8,7 +8,7 @@ Group:		X11/Applications/Games
 Source0:	http://www.cs.auc.dk/~olau/monster-masher/source/%{name}-%{version}.tar.bz2
 # Source0-md5:	c51913f62c23d6502b30bf7c6e0cffc5
 Patch0:		%{name}-locale-names.patch
-URL:		http://www.cs.auc.dk/~olau/monster-masher/
+URL:		http://people.iola.dk/olau/monster-masher/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gconfmm-devel >= 2.6.0

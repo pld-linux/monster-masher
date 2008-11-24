@@ -1,13 +1,12 @@
 Summary:	An action game for the GNOME desktop environment
 Summary(pl.UTF-8):	Gra akcji dla GNOME
 Name:		monster-masher
-Version:	1.8
+Version:	1.8.1
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://www.cs.auc.dk/~olau/monster-masher/source/%{name}-%{version}.tar.bz2
-# Source0-md5:	c51913f62c23d6502b30bf7c6e0cffc5
-Patch0:		%{name}-locale-names.patch
+Source0:	http://people.iola.dk/olau/monster-masher/source/%{name}-%{version}.tar.bz2
+# Source0-md5:	5c5c9d85bd472ad82aa9c9f514109da6
 URL:		http://people.iola.dk/olau/monster-masher/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -30,9 +29,6 @@ kamieniami.
 
 %prep
 %setup -q
-%patch0 -p1
-
-mv po/{no,nb}.po
 
 %build
 %{__aclocal}
@@ -63,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_sysconfdir}/gconf/schemas/*
 %{_desktopdir}/*.desktop
-%{_pixmapsdir}/*
+%{_pixmapsdir}/monster-masher.png
